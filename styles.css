@@ -1,0 +1,61 @@
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+#encabezado {
+    color: white;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.boton:hover {
+    color: white;
+    background-color: black;
+    box-shadow: 4px 5px 25px 3px #fdf703;
+    cursor: pointer;
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+    }
+    @keyframes zoomIn {
+    0% {
+    opacity: 0;
+    -webkit-transform: scale3d(.3, .3, .3);
+    transform: scale3d(.3, .3, .3);
+    }
+    50% {
+    opacity: 1;
+    }
+  
+}
+
+.boton {
+    background-color: white;
+    border: solid 1px #b1aaaa;
+    border-radius: 15px;
+    padding: 14px;
+    margin: 14px;
+    box-shadow: 4px 5px 25px 3px #73a8ff;
+}
